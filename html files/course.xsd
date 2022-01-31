@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+	<xs:element name="Travel">        
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="Flight" maxOccurs="unbounded">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="Course_Id" type="xs:integer"/>
+							<xs:element name="First_name" type="xs:string"/>
+							<xs:element name="Last_name" type="xs:string"/>
+							<xs:element name="Sex" type="xs:string"/> 
+							<xs:element name="Age" type="age"/>
+							<xs:element name="Dept_Id" type="department"/>
+						</xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+             </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:simpleType name="age">
+    	<xs:restriction base="xs:integer">
+    	<xs:minInclusive value="15"/>
+    	<xs:maxExclusive value="110"/>
+    </xs:restriction>
+</xs:simpleType>
+<xs:simpleType name="department">
+    	<xs:restriction base="xs:integer">
+    	<xs:minInclusive value="01"/>
+    	<xs:maxExclusive value="100"/>
+    </xs:restriction>
+</xs:simpleType>
+
+</xs:schema>

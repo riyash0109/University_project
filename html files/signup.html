@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport"    content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="author"      content="Sergey Pozhilov (GetTemplate.com)">
+	
+	<title>Sign up - Progressus Bootstrap template</title>
+
+	<link rel="shortcut icon" href="assets/images/gt_favicon.png">
+	
+	<link rel="stylesheet" media="screen" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700">
+	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+	<link rel="stylesheet" href="assets/css/font-awesome.min.css">
+
+	<!-- Custom styles for our template -->
+	<link rel="stylesheet" href="assets/css/bootstrap-theme.css" media="screen" >
+	<link rel="stylesheet" href="assets/css/main.css">
+
+	<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	<!--[if lt IE 9]>
+	<script src="assets/js/html5shiv.js"></script>
+	<script src="assets/js/respond.min.js"></script>
+	<![endif]-->
+</head>
+
+
+<body>
+	<!-- Fixed navbar -->
+
+	<!-- /.navbar -->
+
+	<header id="head" class="secondary"></header>
+
+	<!-- container -->
+	<div class="container">
+
+		<ol class="breadcrumb">
+			<li><a href="index.html">Home</a></li>
+			<li class="active">Registration</li>
+		</ol>
+
+		<div class="row">
+			
+			<!-- Article main content -->
+			<article class="col-xs-12 maincontent">
+				<header class="page-header">
+					<h1 class="page-title">Registration</h1>
+				</header>
+				
+				<div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
+					<div class="panel panel-default">
+						<div class="panel-body">
+							<h3 class="thin text-center">Register a new account</h3>
+							<p class="text-center text-muted"> <a href="signin.html">Login</a> </p>
+							<hr>
+
+							<form>
+								<div class="top-margin">
+									<label>First Name</label>
+									<input type="text"
+									title="Must contain at least one  number and one uppercase and lowercase letter, and at least 8 or more characters"
+									class="form-control" required maxlength="10" id="f_name" placeholder="first_name" oninput="this.value = this.value.replace(/[^a-zA-Z.]/g, '').replace(/(\..*)\./g, '$1'),">
+                                    
+									
+								</div>
+								<div class="top-margin">
+									<label>Last Name</label>
+									<input type="text" class="form-control"  placeholder="last_name">
+								</div>
+                                <div class="top-margin">
+									<label>Address</label>
+									<input type="text" class="form-control" required placeholder="address">
+								</div>
+
+								<div class="top-margin">
+									<label>Email Address <span class="text-danger"></span></label>
+									<input type="email" required class="form-control" id="email" placeholder="Email-id">
+								</div>
+
+								<div class="row top-margin">
+									<div class="col-sm-6">
+										<label>Password <span class="text-danger"></span></label>
+										<input type="password" class="form-control" id = "txtPassword" pattern = "(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9]).{8,12}" required>
+										<span id="password_strength"></span>
+									</div>
+									<div class="col-sm-6">
+										<label>Confirm Password <span class="text-danger"></span></label>
+										<input type="password" class="form-control" minlength="08" id = "pass1" pattern = "(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9]).{8,12}" required>
+									</div>
+                                    <br><br>
+                                </div>
+
+                                <div class="top-margin"></div>
+                                        <label>What you most like about campus - <span class="text-danger"></span></label><br><br>
+                                        <input type="checkbox" id = "id1" name="id1" value="student">
+                                        <label for="id1">Student</label><br>
+                                        <input type="checkbox" id="id2" name="id2" value="location">
+                                        <label for="id2">Location</label><br>
+                                        <input type="checkbox" id="id3" name="id3" value="campus">
+                                        <label for="id3">Campus</label><br>
+                                        <input type="checkbox" id="id4" name="id4" value="atmosphere">
+                                        <label for="id4">Atmosphere</label><br>
+                                        <input type="checkbox" id="id5" name="id5" value="dormroom">
+                                        <label for="id5">Dorm Room</label><br>
+                                        <input type="checkbox" id="id6" name="id6" value="sports">
+                                        <label for="id6">Sports</label><br><br>
+
+								</div>
+
+                                <div class="top-margin">
+                                    <label>How you came to know about us - <span class="text-danger"></span></label><br><br>
+                                    <input type="radio" id="rid1" name="rid1" value="friends">
+                                    <label for="rid1">Friends</label><br>
+                                    <input type="radio" id="rid2" name="rid1" value = "Television">
+                                    <label for="rid2">Television</label><br>
+                                    <input type="radio" id="rid3" name="rid1" value="Internet">
+                                    <label for="rid3">Internet</label><br>
+                                    <input type="radio" id="rid4" name="rid1" value="Other" checked ="checked">
+                                    <label for="rid4">Other</label><br>
+
+                                </div>
+
+
+								<div class="top-margin">
+									<label>Comment </label>
+									<input type="text" class="form-control" placeholder="Your views">
+								</div>
+
+								<hr>
+
+								<div class="row">
+                                    <div class="col-lg-8">
+										<button class="btn btn-action" type="reset">Reset</button>
+									</div>
+
+									<div class="col-lg-4 text-right">
+										<button class="btn btn-action" type="submit">Register</button>
+									</div>
+
+								</div>
+							</form>
+						</div>
+					</div>
+
+				</div>
+				
+			</article>
+
+			<!-- /Article -->
+
+		</div>
+	</div>	<!-- /container -->
+
+	<footer id="footer" class="top-space">
+
+		<div class="footer1">
+			<div class="container">
+				<div class="row">
+					
+					<div class="col-md-3 widget">
+						<h3 class="widget-title">Contact</h3>
+						<div class="widget-body">
+							<p>
+								Tel: +91 804012 9100 / 9600<br>
+								E-mail:
+								<a href="mailto:#">
+								   mail@christuniversity.in<br></a>
+									Web:
+									<a href = "https://christuniversity.in/">http://www.christuniversity.in</a><br>
+								<br>Dharmaram College Post, Hosur Road, Bengaluru - 560029,Karnataka, India
+							</p>	
+						</div>
+					</div>
+
+					<div class="col-md-3 widget">
+						<h3 class="widget-title">Follow us</h3>
+						<div class="widget-body">
+							<p class="follow-me-icons">
+								<a href=""><i class="fa fa-twitter fa-2"></i></a>
+								<a href=""><i class="fa fa-dribbble fa-2"></i></a>
+								<a href=""><i class="fa fa-github fa-2"></i></a>
+								<a href=""><i class="fa fa-facebook fa-2"></i></a>
+							</p>	
+						</div>
+					</div>
+
+					<div class="col-md-6 widget">
+						<h3 class="widget-title">MISSION AND VISION</h3>
+						<div class="widget-body">
+							<p>...</p>
+						</div>
+					</div>
+
+				</div> <!-- /row of widgets -->
+			</div>
+		</div>
+
+		<div class="footer2">
+			<div class="container">
+				<div class="row">
+					
+					<div class="col-md-6 widget">
+						<div class="widget-body">
+							<p class="simplenav">
+								<a href="#">Home</a> | 
+								<a href="about.html">About</a> |
+								<a href="contact.html">Contact</a> |
+								<b><a href="signup.html">Sign up</a></b>
+							</p>
+						</div>
+					</div>
+
+					<div class="col-md-6 widget">
+						<div class="widget-body">
+							<p class="text-right">
+							</p>
+						</div>
+					</div>
+
+				</div> <!-- /row of widgets -->
+			</div>
+		</div>
+
+	</footer>	
+	
+
+		
+		
+
+
+
+
+	<!-- JavaScript libs are placed at the end of the document so the pages load faster -->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+	<script src="assets/js/headroom.min.js"></script>
+	<script src="assets/js/jQuery.headroom.min.js"></script>
+	<script src="assets/js/template.js"></script>
+</body>
+</html>
+<script>
+    var email=document.getElementById('email');
+    var span=document.getElementsByTagName('span');
+
+    email.onkeydown = function()
+      {
+        const regex1 = /[a-z0-9]+@[a-z0-9._%+-]+.(christuniversity.in)/;
+        
+        if(regex1.test(email.value))
+        {
+          span[0].innerText = "Your Email is Valid";
+          span[0].style.color = "blue";  
+        }
+        else
+        {
+            span[0].innerText="Invalid Email Id";
+            span[0].style.color="red";
+        }
+      }
+
+        
+</script>
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script type="text/javascript">
+    $(function () {
+        $("#txtPassword").bind("keyup", function () {
+            //TextBox left blank.
+            if ($(this).val().length == 0) {
+                $("#password_strength").html("");
+                return;
+            }
+ 
+            //Regular Expressions.
+            var regex = new Array();
+            regex.push("[A-Z]"); //Uppercase Alphabet.
+            regex.push("[a-z]"); //Lowercase Alphabet.
+            regex.push("[0-9]"); //Digit.
+            regex.push("[$@$!%*#?&]"); //Special Character.
+ 
+            var passed = 0;
+ 
+            //Validate for each Regular Expression.
+            for (var i = 0; i < regex.length; i++) {
+                if (new RegExp(regex[i]).test($(this).val())) {
+                    passed++;
+                }
+            }
+ 
+ 
+            //Validate for length of Password.
+            if (passed > 2 && $(this).val().length > 8) {
+                passed++;
+            }
+ 
+            //Display status.
+            var color = "";
+            var strength = "";
+            switch (passed) {
+                case 0:
+                case 1:
+                    strength = "Weak";
+                    color = "red";
+                    break;
+                case 2:
+                    strength = "Good";
+                    color = "darkorange";
+                    break;
+                case 3:
+                case 4:
+                    strength = "Strong";
+                    color = "green";
+                    break;
+                case 5:
+                    strength = "Very Strong";
+                    color = "darkgreen";
+                    break;
+            }
+            $("#password_strength").html(strength);
+            $("#password_strength").css("color", color);
+        });
+    });
+</script>
